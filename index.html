@@ -1,0 +1,1057 @@
+<!--
+*************************************************************
+    PROYECTO DE PAGINA WEB: RESTAURANTE DIRL
+    CATEDRATICO:JOHATHAN HERBERT RAJO CASTELLANO
+    CARRERA: INGENIERIA EN SISTEMAS COMPUTACIONALES
+    MATERIA: DISEÑO WEB
+    ALUMN@S:
+        ->DANIA LISETH LARA ARGUETA
+        ->IRIS DINORA CALDERON PEREZ
+        ->LUIS  ANTONIO TOLEDO VELIS
+        ->ROBERTO FRANCISCO CANALES ZEPEDA
+    
+    GRUPO:01
+*************************************************************
+-->
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shorcut icon" href="img/LOGOS/LOGO.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2? family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <meta name="description" content=" RESTAURANTE DIRL  se encuentra un espacio dedicado y especializado en la elaboración  de cocina Salvadoreña  ideal para tu familias y amigos">
+    <meta name="keywords" content="RESTAURANTE DIRL  se encuentra un espacio dedicado y especializado en la elaboración  de cocina Salvadoreña  ideal para tu familias y amigos">
+
+    <title>RESTAURANTE DIRL</title>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row align-items-stretch justify-content-between">
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+                    <a class="navbar-brand" href="#"> BIENVENIDO A DIRL</a>
+                    <ul class="cont-ul">
+                        <a class="navbar-b" href="index.html#des">DESAYUNOS</a>
+                        <a class="navbar-b" href="index.html#alm">ALMUERZOS</a>
+                        <a class="navbar-b" href="index.html#cen">CENAS</a>
+                        <a class="navbar-b" href="index.html#pos">POSTRES</a>
+                        <a class="navbar-b" href="index.html#beb">BEBIDAS</a>
+                    </ul>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <img src="img/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px" width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></img>
+                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                    <table id="lista-carrito" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                    <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                                        Compra</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+            <br>
+            <br>
+            <h1 class="display-4 mt-4">LISTA DE SU ORDEN</h1>
+            <p class="lead">Selecciona uno de nuestros menus y accede a un descuento</p>
+        </div>
+
+        <div class="container" id="lista-productos">
+            <br>
+            <br>
+            <br>
+            <a name="des" class="button">DESAYUNOS</a>
+
+            <div class="card-deck mb-3 text-center">
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+
+                        <h4 class="my-0 font-weight-bold">BURRITOS</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/Desayuno/BREAKFAST-BURRITOS-770x628.jpg" class="card-img-top" width="200" height="200">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">3.50</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>MENU DEL DIA</li>
+                            <li>MD1</li>
+                            <li>BURRITO</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CEREALES </h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/Desayuno/desayunos-recetas-deliciosas.jpg" class="card-img-top" width="300" height="200">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">2.50</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>MENU INFANTIL</li>
+                            <li>MD2</li>
+                            <li>CEREAL</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                    </div>
+                </div>
+
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">HOMELET</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/Desayuno/descarga.jfif" class="card-img-top" width="150" height="200">
+                        <h1 class="card-title pricing-card-title precio">$ <span class=""> 3.00</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>FESTIVAL DE VEGETALES</li>
+                            <li>MD3</li>
+                            <li>HOMELET</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container" id="lista-productos">
+                </a>
+                <div class="card-deck mb-3 text-center">
+
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+
+                            <h4 class="my-0 font-weight-bold">POLLO</h4>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/Desayuno/IMG-20220125-WA0110.jpg" class="card-img-top" width="300" height="200">
+                            <h1 class="card-title pricing-card-title precio">$ <span class="">4.50</span></h1>
+
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li></li>
+                                <li>POLLO CON VEGETALES</li>
+                                <li>MD4</li>
+                                <li>POLLO</li>
+                            </ul>
+                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-bold">SANDWICH </h4>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/Desayuno/desayuno-saludable-sandwich-aguacate-y-huevo-1200x900.jpg" class="card-img-top" width="300" height="200">
+                            <h1 class="card-title pricing-card-title precio">$ <span class="">2.75</span></h1>
+
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li></li>
+                                <li>BON VIVEUR</li>
+                                <li>MD5</li>
+                                <li>SANDWICH </li>
+                            </ul>
+                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Comprar</a>
+                        </div>
+                    </div>
+
+
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-bold">SANDWICH ITALIANO</h4>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/Desayuno/7VWG3SEAPVDONK2KXLRCP6IW3M.jpg" class="card-img-top" width="300" height="200">
+                            <h1 class="card-title pricing-card-title precio">$ <span class=""> 2.75</span></h1>
+
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li></li>
+                                <li>BAGUETTE</li>
+                                <li>MD6</li>
+                                <li>SANDWICH ITALIANO</li>
+                            </ul>
+                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Comprar</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container" id="lista-productos">
+                    </a>
+                    <div class="card-deck mb-3 text-center">
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+
+                                <h4 class="my-0 font-weight-bold">HUEVOS FRITOS</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Desayuno/IMG-20220128-WA0036.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class="">3.50</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>MENU RANCHERO</li>
+                                    <li>MD7</li>
+                                    <li>HUEVOS FRITOS CON SALSA</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="7">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">HUEVOS</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Desayuno/COMIDA1.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class="">3.00</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>HOMELET DE VERANO</li>
+                                    <li>MD8</li>
+                                    <li>HUEVOS CON ESPINACA</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="8">Comprar</a>
+                            </div>
+                        </div>
+
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">CHAMPIÑONES</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Desayuno/IMG-20220128-WA0035.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 3.00</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>SUPER MIX</li>
+                                    <li>MD9</li>
+                                    <li>HAMPIÑONES CON CHORIZO</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9">Comprar</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <a name="alm" class="button">ALMUERZOS</a>
+
+                    <div class="card-deck mb-3 text-center">
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">CAMARONES</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Almuerzo/camarones-al-ajillo-deliciosos.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 8.00</span></h1>
+
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>CAMARONESAL AJILLO</li>
+                                    <li>MA1</li>
+                                    <li>CAMARONESCON SALSA DE AJO</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="10">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">ALITAS</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Almuerzo/FB_IMG_1643239452991.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 4.50</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>ALITAS BUFALO</li>
+                                    <li>MA2</li>
+                                    <li>ALITAS CON SALSA BUFALO</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="11">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">CHICKEN</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Almuerzo/FB_IMG_1643239471081.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 5.50</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>FIED CHICKEN</li>
+                                    <li>MA3</li>
+                                    <li>POLLO FRITO CON ENSALADA</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="12">Comprar</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-deck mb-3 text-center">
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">SOPA</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Almuerzo/sopa1.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 3.00</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>SOPA DE TORTILLA</li>
+                                    <li>MA4</li>
+                                    <li>SOPA DE TORTILLA MEXICANA</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="13">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">HAMBURGUESA</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Almuerzo/ham1.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 2.00</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>COMBO INFANTIL</li>
+                                    <li>MA5</li>
+                                    <li>HAMBURGUESA DE CARNE</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="14">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">FLAUTAS</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Almuerzo/falua1.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 2.75</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>FLAUTAS DE POLLO</li>
+                                    <li>MA6</li>
+                                    <li>FLAUTAS MEXICANAS</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="15">Comprar</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-deck mb-3 text-center">
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">ENCHILADAS</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Almuerzo/FB_IMG_1643239701405.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 2.75</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>ESPECIAL DE MEXICANAS</li>
+                                    <li>MA7</li>
+                                    <li>ENCHILADAS MEXICANAS</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="16">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">NACHOS</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Almuerzo/FB_IMG_1643239679372.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 3.00</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>CHILI BACON</li>
+                                    <li>MA8</li>
+                                    <li>NACHOS CON JAMON Y QUESO</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="17">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">CARNES</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Almuerzo/IMG-20220125-WA0082.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 2.75</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>CHURRASCO</li>
+                                    <li>MA9</li>
+                                    <li>CARNE, CHORIZO Y ENSALADA</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="18">Comprar</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <a name="cen" class="button">CENA</a>
+
+                    <div class="card-deck mb-3 text-center">
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">PIZZA</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Cena/im1.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 4.00</span></h1>
+
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>PIZZA PERSONAL</li>
+                                    <li>MC1</li>
+                                    <li>PIZZA DE JAMON Y QUESO </li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="19">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">HOT DOG</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Cena/im2.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 2.50</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>HOT DOG ESPECIAL</li>
+                                    <li>MC2</li>
+                                    <li>PAN CON SALCHILLA Y ESCABECHE</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="20">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">COMBO PARA DOS</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Cena/im3.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 5.00</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>CRUNCHY TIPICO</li>
+                                    <li>MC3</li>
+                                    <li>CORN DOG Y TACOS</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="21">Comprar</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-deck mb-3 text-center">
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">TACOS</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Cena/im4.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 3.50</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>TACOS MEXICANOS</li>
+                                    <li>MC4</li>
+                                    <li>TACOS DE CARNE</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="22">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">COMBO ESPECIAL</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Cena/im5.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 5.50</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>BIG COMBO</li>
+                                    <li>MC5</li>
+                                    <li>MINI HAMBURGUESA Y PAPAS</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="23">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">COMBO SUPER</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Cena/im6.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 11.75</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>SUPER MENU</li>
+                                    <li>MC6</li>
+                                    <li>PIZZA + BOQUITAS + TACOS</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="24">Comprar</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-deck mb-3 text-center">
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">TACOS ESPECIAL</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Cena/im7.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 3.75</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>TACOS CRISPY</li>
+                                    <li>MC7</li>
+                                    <li>TACOS DE POLLO </li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="25">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">COMBOS PARA PAREJA</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Cena/im8.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 6.00</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>PASTOR BEAF</li>
+                                    <li>MC8</li>
+                                    <li>TACOS Y ENCHILADAS</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="26">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">NUDITOS</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Almuerzo/IMG-20220125-WA0082.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 4.75</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>CHURRASCO DE NUDITOS</li>
+                                    <li>MC9</li>
+                                    <li>NUDITOS CON SALSA + QUESO </li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="27">Comprar</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <a name="pos" class="button">POSTRES</a>
+
+                    <div class="card-deck mb-3 text-center">
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">BOLLOS</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Postres/IMA1.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 2.00</span></h1>
+
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>MINI BOLLOS</li>
+                                    <li>MP1</li>
+                                    <li>PANECILLOS CON CHOCOLATE </li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="28">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">VASO FELIZ</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Postres/IMA2.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 1.50</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>VASO DULCE ESPECIAL</li>
+                                    <li>MP2</li>
+                                    <li>POSTRES DE FRUTOS ROJOS</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="29">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">PASTEL ESPECIAL</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Postres/IMA3.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 7.50</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>EXPLOSION DE CARAMELO</li>
+                                    <li>MP3</li>
+                                    <li>PASTEL DE CARAMELO</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="30">Comprar</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-deck mb-3 text-center">
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">ESPECIAL DE FRESAS</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Postres/IMA4.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 4.50</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>FRESAS DULCES </li>
+                                    <li>MP4</li>
+                                    <li>FRESASCON CHOCOLATE</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="31">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">CREPAS ESPECIAL</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Postres/IMA5.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 2.50</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>CREPY STRAWBERRY</li>
+                                    <li>MP5</li>
+                                    <li>CREPAS CON FRESAS </li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="32">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">GALLETAS</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Postres/IMA6.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 3.75</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>VALENTIN DULCE</li>
+                                    <li>MP6</li>
+                                    <li>GALLETAS DECORADAS</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="33">Comprar</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-deck mb-3 text-center">
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">ESPECIAL DE FRUTAS</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Postres/IMA7.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 2.75</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>SWEET SUMMER</li>
+                                    <li>MP7</li>
+                                    <li>COCKTAIL DE FRUTAS </li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="34">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">POSTRE DEL DIA</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Postres/IMA8.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 8.00</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>STRAWBERRY CAKE</li>
+                                    <li>MP8</li>
+                                    <li>PASTEL DE FRESAS</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="35">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">PANCAKES ESPECIAL</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Postres/IMA9.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 3.75</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>MINI PANCAKES</li>
+                                    <li>MP9</li>
+                                    <li>PANCAKES CON GALLETAS </li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="36">Comprar</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <a name="beb" class="button">BEBIDAS</a>
+
+                    <div class="card-deck mb-3 text-center">
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">COCTEL ESPECIAL</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Bebidas/IMA1.png" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 2.50</span></h1>
+
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>LAGUNA AZUL</li>
+                                    <li>MB1</li>
+                                    <li>TRAGO EXOTICO REFRESCANTE </li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="37">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">COCTEL DEL DIA</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Bebidas/IMA2.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 2.50</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>FLOR DE NARANJA</li>
+                                    <li>MB2</li>
+                                    <li>TEQUILA CON NARANJA</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="38">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">SODA</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Bebidas/IMA3.jpeg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 0.80</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>TROPICAL UVA</li>
+                                    <li>MB3</li>
+                                    <li>SODA CON SABOR A UVA</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="39">Comprar</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-deck mb-3 text-center">
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">ESPECIAL DE CERVEZA</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Bebidas/IMA4.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 1.50</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>CERVEZA</li>
+                                    <li>MB4</li>
+                                    <li>CERVEZA GOLDEN</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="40">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">LICOR ESPECIAL</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Bebidas/IMA5.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 3.50</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>VILLA CLARA</li>
+                                    <li>MB5</li>
+                                    <li>VODKA CON CEREZAS</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="41">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">BOTELLA CON AGUA</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Bebidas/IMA6.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 0.75</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>GREAT VALUE</li>
+                                    <li>MB6</li>
+                                    <li>AGUA</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="42">Comprar</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-deck mb-3 text-center">
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">LICUADO ESPECIAL</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Bebidas/IMA7.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 2.00</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>STRAWBERRY POP</li>
+                                    <li>MB7</li>
+                                    <li>LICUADODE FRESA CON LECHE </li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="43">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">SODA</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Bebidas/IMA8.jpg" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class=""> 0.80</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>COCA COLA</li>
+                                    <li>MB8</li>
+                                    <li>BEBIDA CARBONATADA</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="44">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">SODA MINI</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Bebidas/IMA9.jfif" class="card-img-top" width="300" height="200">
+                                <h1 class="card-title pricing-card-title precio">$ <span class="">0.50</span></h1>
+
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>SABOR FANTA</li>
+                                    <li>MB9</li>
+                                    <li>FANTA MANDARINA </li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="45">Comprar</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+    </main>
+    <footer>
+
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="logo">
+                    <center><img src="img/LOGOS/LOGO.png" alt=""></center>
+                </div>
+                <div class="terms">
+                    <p>Solamente a través de la cocina se puede expresar belleza, poesía, humor, felicidad, belleza y armonía después de tu casa, este es el mejor restaurante del mundo.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="box__footer">
+                <h2> DIRL</h2>
+                <a href="html/contactanos.html" class="app">Conctactanos</a>
+                <a href="html/politicas.html" class="app">Politicas</a>
+                <a href="html/preguntas.html" class="app">Preguntas</a>
+                <a href="html/quienes-somos.html" class="app">Quienes-Somos</a>
+                <a href="html/ubicacion.html" class="app">Ubicación</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a title="Facebook" href="https://es-la.facebook.com/" class="app"> <img src="img/Redes Sociales/face.png" width="30" height="30" alt="Facebook" /> &nbsp Facebook </a>
+                <a title="Twitter" href="https://twitter.com/?lang=es" class="app"> <img src="img/Redes Sociales/twitter.png" width="30" height="30" alt="Twitter" /> &nbsp Twitter </a>
+                <a title="Linkedin" href="https://sv.linkedin.com/" class="app"> <img src="img/Redes Sociales/linkd.png" width="40" height="25" alt="Linkedin" /> &nbsp Linkedin </a>
+                <a title="Instagram" href="https://www.instagram.com/" class="app"> <img src="img/Redes Sociales/insta.png" width="30" height="30" alt="Instagram" /> &nbsp Instagram </a>
+                <a title="Youtube" href="https://www.youtube.com/" class="app"> <img src="img/Redes Sociales/youtube.png" width="30" height="30" alt=" Youtube" /> &nbsp Youtube</a>
+                <a title="WhatsApp" href="https://web.whatsapp.com/" class="app"> <img src="img/Redes Sociales/whastapp.png" width="30" height="30" alt=" WhatsApp" /> &nbsp WhatsApp </a>
+                <a title="Gmail" href="https://www.google.com/intl/es/gmail/about/" class="app"> <img src="img/Redes Sociales/gmail.png" width="30" height="30" alt=" WhatsApp" /> &nbsp Gmail </a>
+            </div>
+
+        </div>
+
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2022 <b>RESTAURANTE DIRL</b></p>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script>
+
+</body>
+
+</html>

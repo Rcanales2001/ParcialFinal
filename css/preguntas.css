@@ -1,0 +1,61 @@
+.preguntas {
+    min-height: 35em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+body {
+    background: url('../img/fondo7.jpg');
+    background-color: rgb(0, 0, 0);
+    ;
+    color: rgb(0, 0, 0);
+    ;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.preguntas>div:first-child {
+    border: 1px solid black;
+}
+
+.preguntas>div {
+    min-height: 22em;
+    width: 50%;
+    margin-left: 25%;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
+    color: rgb(114, 57, 17);
+}
+
+.preguntas>div>div {
+    margin-bottom: 1em;
+}
+
+.preguntas p {
+    width: 50%;
+    color: rgb(8, 8, 8);
+    padding: 15px;
+    word-spacing: 5px;
+    letter-spacing: 0.7;
+}
+
+@media (max-width: 1024px) {
+    .preguntas>div:first-child {
+        border: none;
+    }
+    .preguntas>div {
+        margin-left: 0;
+        width: 100%;
+    }
+    .preguntas p {
+        width: 90%;
+    }
+}

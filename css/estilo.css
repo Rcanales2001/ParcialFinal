@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2? family=Ramaraja&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #a9aaac;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    background: url('../img/fondo1.jpg');
+    background-repeat: repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+.iconoss1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    <!-- /.justify-content: center --> justify-content: space-between;
+    align-items: center;
+    background-color: #24252a;
+    padding-left: 2vw;
+}
+
+.cont-ul {
+    background-color: #fff;
+    color: #008849;
+    text-decoration: none;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    border-radius: 15px;
+    /* margin: 50px; */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a {
+    list-style: none;
+    cursor: pointer;
+    padding: 1.5vw;
+    transition: all .3s ease 0s;
+}
+
+h1 {
+    color: rgb(12, 12, 12);
+}
+
+p {
+    color: rgb(8, 8, 8);
+}
+
+.container {
+    margin: 1px;
+    border-radius: 1px;
+    /* detallar margen*/
+}
+
+li:hover {
+    background-color: #008849;
+}
+
+.develop {
+    position: relative;
+}
+
+.ul-second {
+    display: none;
+    position: absolute;
+    margin-top: 1.5vw;
+}
+
+.ul-second>li {
+    width: 190px;
+    transform: translateX(-20px);
+    border-bottom: solid 1px #fff;
+    text-align: center;
+    background-color: #fff;
+}
+
+.ul-second>li:hover {
+    background-color: #008849;
+}
+
+.navbar-b {
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    font-style: 'Montserrat';
+    color: #000000;
+    border-radius: 10px;
+}
+
+.develop:hover>.ul-second {
+    display: block;
+}
+
+.ul-third {
+    position: absolute;
+    transform: translateX(100%);
+    right: 0;
+    top: 40%;
+    background-color: aqua;
+}
+
+.ul-third>li {
+    padding: 1.5vw;
+    border-bottom: solid 1px red;
+}
+
+.front:hover>.ul-third {
+    display: block;
+}
+
+#cargando {
+    display: none;
+}
+
+.button {
+    background-color: #BAF3E0;
+}
+
+#carrito {
+    height: 300px;
+    width: 450px;
+    overflow: auto;
+}
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    padding: 50px 0px;
+    background-size: cover;
+    color: rgb(12, 12, 12);
+}
+
+.container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    color: rgb(8, 8, 8);
+}
+
+.app {
+    color: rgb(10, 10, 10);
+}
+
+.box__footer .logo img {
+    width: 180px;
+}
+
+.box__footer .terms {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: rgb(10, 10, 10);
+    font-size: 18px;
+}
+
+.box__copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p {
+    margin-top: 20px;
+    color: rgb(8, 8, 8);
+}
+
+.box__copyright hr {
+    border: none;
+    height: 1px;
+    background-color: rgb(8, 8, 8);
+}

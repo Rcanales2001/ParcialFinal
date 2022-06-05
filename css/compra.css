@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2? family=Ramaraja&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #a9aaac;
+    color: #fff;
+    background: url('../img/fondoss2.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    <!-- /.justify-content: center --> justify-content: space-between;
+    align-items: center;
+    background-color: #24252a;
+    padding-left: 2vw;
+}
+
+.cont-ul {
+    display: flex;
+    color: azure;
+    align-items: center;
+    font-size: 13px;
+    background-color: blanchedalmond;
+    padding: 1px;
+    border-radius: 1px;
+    /* detallar margen*/
+    margin: 1px;
+}
+
+.table {
+    color: #fff;
+}
+
+a {
+    list-style: none;
+    cursor: pointer;
+    padding: 1.5vw;
+    transition: all .3s ease 0s;
+}
+
+.container {
+    margin: 1px;
+    border-radius: 1px;
+    /* detallar margen*/
+}
+
+li:hover {
+    background-color: #008849;
+}
+
+.develop {
+    position: relative;
+}
+
+.ul-second {
+    display: none;
+    position: absolute;
+    margin-top: 1.5vw;
+}
+
+.ul-second>li {
+    width: 190px;
+    transform: translateX(-20px);
+    border-bottom: solid 1px #fff;
+    text-align: center;
+    background-color: #fff;
+}
+
+.ul-second>li:hover {
+    background-color: #008849;
+}
+
+.develop:hover>.ul-second {
+    display: block;
+}
+
+.ul-third {
+    position: absolute;
+    transform: translateX(100%);
+    right: 0;
+    top: 40%;
+    background-color: aqua;
+}
+
+.ul-third>li {
+    padding: 1.5vw;
+    border-bottom: solid 1px red;
+}
+
+.front:hover>.ul-third {
+    display: block;
+}
+
+#cargando {
+    display: none;
+}
